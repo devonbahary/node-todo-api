@@ -8,7 +8,7 @@ beforeEach((done) => {
     Todo.remove({}).then(() => done());
 });
 
-describe('POST /todos', (todos) => {
+describe('POST /todos', () => {
     it('should create a new todo', (done) => {
         const text = 'Eat lunch today';
         request(app)
